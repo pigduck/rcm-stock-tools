@@ -27,7 +27,7 @@ add_action('woocommerce_product_after_variable_attributes', function ($loop, $va
             'id'                => "_rcm-stock-tools{$loop}",
             'name'              => "_rcm-stock-tools[{$loop}]",
             'value'             => get_post_meta( $variation->ID, '_rcm-stock-tools', true ),
-            'label'             => 'Volume',
+            'label'             => 'number',
             'type'              => 'number',
             'desc_tip'          => true,
             'custom_attributes' => array('min' => '1')
